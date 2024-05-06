@@ -1,4 +1,5 @@
 import GCD from "./gcd.js";
+import MultiplicationTable from "./mulitplication_table.js";
 import ComputersCaseTest from "./numbers_and_computers.test.js"
 
 const tests = new ComputersCaseTest();
@@ -18,4 +19,9 @@ buttGcd.onclick = () => {
         .split(" ")
         .map((num) => { return parseInt(num, 10) });
     console.log(GCD.calculcate(nums));
+}
+
+buttTable.onclick = () => {
+    let num = document.getElementById("tableTest").value;
+    MultiplicationTable.draw(num);
 }
