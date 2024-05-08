@@ -24,7 +24,6 @@ export default class GCD {
             if (nums[i] % num !== 0) {
                 return false;
             }
-
         }
         return true;
     }
